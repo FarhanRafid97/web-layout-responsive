@@ -8,7 +8,8 @@
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.55);
+    background-color: white;
+    top: 0;
 }
 
 .header-container {
@@ -44,9 +45,7 @@
     font-size: 18px;
     color: black;
     transition: 0.5s;
-    padding: 0.3rem 1.5rem;
-    background-color: white;
-    border-radius: 15px;
+
 }
 
 .menu a:hover {
@@ -60,6 +59,7 @@
 }
 
 .banner {
+    margin-top: 70px;
     background-image: url('images/banner.jpg');
     background-size: cover;
     height: 500px;
@@ -130,6 +130,10 @@
     row-gap: 36px;
 }
 
+.popular-title {
+    margin-bottom: 2rem;
+}
+
 .product-item {
     border: 1px solid #e3e3e3;
     border-radius: 8px;
@@ -157,13 +161,35 @@
 }
 
 .product-item:hover {
-    background-color: #77287d;
-    transform: translateY(-5%) scale(1.1);
+
+    transform: translateY(-5%) translateX(2%);
 
     transition: transform 0.7s;
 }
 
-.product-item:hover .product-title,
-.product-item:hover .product-price {
-    color: #fff;
+
+
+
+/* contact us */
+
+
+.contact-us {
+    margin-top: 56px;
+    margin-bottom: 10px;
+}
+
+.contact-input {
+    display: block;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    width: 400px;
+}
+
+.contact-button {
+    background-color: #77287d;
+    border: none;
+    color: #ffffff;
+    display: block;
+    padding: 8px 16px;
+    width: 400px;
 }
