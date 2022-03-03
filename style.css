@@ -106,7 +106,6 @@ body {
 }
 
 
-
 .category-item {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgb(34 34 34 / 15%);
@@ -197,18 +196,29 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #77287d;
-    color: #ffffff;
-    margin-top: 64px;
+    background-color: white;
+    box-shadow: 0 -4px 20px rgb(124, 124, 124, 0.25);
+    margin-top: 94px;
     padding-bottom: 16px;
     padding-top: 16px;
 }
 
 .footer .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    color: black;
 }
 
+.footer-copyright {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-name {
+    font-size: 18px;
+}
 
 @media (max-width: 991px) {
     .container {
